@@ -36,3 +36,4 @@ D:\Work\RightSolutions4u\RightSolutions4u\RightSolutions4u\obj\Debug\netcoreapp3
 D:\Work\RightSolutions4u\RightSolutions4u\RightSolutions4u\obj\Debug\netcoreapp3.1\RightSolutions4u.pdb
 D:\Work\RightSolutions4u\RightSolutions4u\RightSolutions4u\obj\Debug\netcoreapp3.1\RightSolutions4u.genruntimeconfig.cache
 D:\Work\RightSolutions4u\RightSolutions4u\RightSolutions4u\obj\Debug\netcoreapp3.1\RightSolutions4u.csproj.CopyComplete
+D:\Work\RightSolutions4u\RightSolutions4u\RightSolutions4u\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Portfolio.cshtml.g.cs

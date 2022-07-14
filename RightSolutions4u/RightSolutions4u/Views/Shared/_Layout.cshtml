@@ -19,10 +19,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         }
     </script>
     <!--//tags -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/font-awesome.css" rel="stylesheet">
     <!-- //for bootstrap working -->
     <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,300,300i,400,400i,500,500i,600,600i,700,800" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700" rel="stylesheet">
@@ -42,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <span class="icon-bar"></span>
                         </button>
                         <div class="logo-w3layouts-agileits">
-                            <h1> <a class="navbar-brand" href="index.html"><i class="fa fa-clone" aria-hidden="true"></i> RightSolutions4u @*<span class="desc">For your Business</span>*@</a></h1>
+                            <h1> <a class="navbar-brand" href="@Url.Action("Index", "Home")"><i class="fa fa-clone" aria-hidden="true"></i> RightSolutions4u @*<span class="desc">For your Business</span>*@</a></h1>
                         </div>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
@@ -52,14 +52,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                             </ul>
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="index.html">Home</a></li>
+                                <li class="active"><a href="@Url.Action("Index", "Home")">Home</a></li>
                                 <li><a href="about.html">About</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="@Url.Action("Portfolio", "Menu")">Portfolio</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="portfolio.html">Projects</a></li>
+                                        <li><a href="@Url.Action("Portfolio", "Menu")">Projects</a></li>
                                         <li><a href="404.html">Services</a></li>
 
 
@@ -92,7 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <a class="act" href="single.html">Read More</a>
                                 </div>
                                 <div class="bnr-button">
-                                    <a href="portfolio.html" class="two scroll ">Portfolio</a>
+                                    <a href="@Url.Action("Portfolio", "Menu")" class="two scroll ">Portfolio</a>
                                 </div>
                                 <div class="clearfix"> </div>
                             </div>
@@ -109,7 +109,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <a class="act" href="single.html">Read More</a>
                                 </div>
                                 <div class="bnr-button">
-                                    <a href="portfolio.html" class="two scroll ">Portfolio</a>
+                                    <a href="@Url.Action("Portfolio", "Menu")" class="two scroll ">Portfolio</a>
                                 </div>
                                 <div class="clearfix"> </div>
                             </div>
@@ -126,7 +126,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <a class="act" href="single.html">Read More</a>
                                 </div>
                                 <div class="bnr-button">
-                                    <a href="portfolio.html" class="two scroll ">Portfolio</a>
+                                    <a href="@Url.Action("Portfolio", "Menu")" class="two scroll ">Portfolio</a>
                                 </div>
                                 <div class="clearfix"> </div>
                             </div>
@@ -174,33 +174,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="footer">
         <div class="footer_inner_info_w3ls_agileits">
             <div class="col-md-3 footer-left">
-                <h2><a href="index.html"><i class="fa fa-clone" aria-hidden="true"></i> Conceit </a></h2>
-                <p>Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                <h2><a href="@Url.Action("Index", "Home")"><i class="fa fa-clone" aria-hidden="true"></i> RightSolutions4u </a></h2>
+                <p>Automate in less time</p>
                 <ul class="social-nav model-3d-0 footer-social social two">
                     <li>
-                        <a href="#" class="facebook">
+                        <a href="https://web.facebook.com/Rightsolutions4u-105254077519141/" class="facebook">
                             <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
                             <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="twitter">
+                        <a href="https://twitter.com/rightsolutions4" class="twitter">
                             <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
                             <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="instagram">
+                        <a href="https://www.instagram.com/rightsolutions4u/?hl=en" class="instagram">
                             <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
                             <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
                         </a>
                     </li>
-                    <li>
+                    @*<li>
                         <a href="#" class="pinterest">
                             <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
                             <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
                         </a>
-                    </li>
+                    </li>*@
                 </ul>
             </div>
             <div class="col-md-9 footer-right">
@@ -208,7 +208,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="col-md-4 sign-gd">
                         <h4>Latest <span>Info</span> </h4>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="404.html">Services</a></li>
                             <li><a href="signin.html">Signin</a></li>
@@ -218,15 +218,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="col-md-3 sign-gd flickr-post">
                         <h4>Our <span>Works</span></h4>
                         <ul>
-                            <li><a href="single.html"><img src="images/g1.jpg" alt=" " class="img-responsive" /></a></li>
-                            <li><a href="single.html"><img src="images/g2.jpg" alt=" " class="img-responsive" /></a></li>
-                            <li><a href="single.html"><img src="images/g3.jpg" alt=" " class="img-responsive" /></a></li>
-                            <li><a href="single.html"><img src="images/g4.jpg" alt=" " class="img-responsive" /></a></li>
-                            <li><a href="single.html"><img src="images/g5.jpg" alt=" " class="img-responsive" /></a></li>
-                            <li><a href="single.html"><img src="images/g6.jpg" alt=" " class="img-responsive" /></a></li>
-                            <li><a href="single.html"><img src="images/g7.jpg" alt=" " class="img-responsive" /></a></li>
-                            <li><a href="single.html"><img src="images/g8.jpg" alt=" " class="img-responsive" /></a></li>
-                            <li><a href="single.html"><img src="images/g4.jpg" alt=" " class="img-responsive" /></a></li>
+                            <li><a href="single.html"><img src="~/images/g1.jpg" alt=" " class="img-responsive" /></a></li>
+                            <li><a href="single.html"><img src="~/images/g2.jpg" alt=" " class="img-responsive" /></a></li>
+                            <li><a href="single.html"><img src="~/images/g3.jpg" alt=" " class="img-responsive" /></a></li>
+                            <li><a href="single.html"><img src="~/images/g4.jpg" alt=" " class="img-responsive" /></a></li>
+                            <li><a href="single.html"><img src="~/images/g5.jpg" alt=" " class="img-responsive" /></a></li>
+                            <li><a href="single.html"><img src="~/images/g6.jpg" alt=" " class="img-responsive" /></a></li>
+                            <li><a href="single.html"><img src="~/images/g7.jpg" alt=" " class="img-responsive" /></a></li>
+                            <li><a href="single.html"><img src="~/images/g8.jpg" alt=" " class="img-responsive" /></a></li>
+                            <li><a href="single.html"><img src="~/images/g4.jpg" alt=" " class="img-responsive" /></a></li>
                         </ul>
                     </div>
                     <div class="col-md-5 sign-gd-two">
@@ -238,7 +238,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
                                 <div class="address-right">
                                     <h6>Phone Number</h6>
-                                    <p>+1 234 567 8901</p>
+                                    <p>+92 312 041 6816</p>
                                 </div>
                                 <div class="clearfix"> </div>
                             </div>
@@ -248,7 +248,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
                                 <div class="address-right">
                                     <h6>Email Address</h6>
-                                    <p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
+                                    <p>Email :<a href="mailto:info@rightsolutions4u.com"> info@rightsolutions4u.com </a></p>
                                 </div>
                                 <div class="clearfix"> </div>
                             </div>
@@ -259,7 +259,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="address-right">
                                     <h6>Location</h6>
                                     <p>
-                                        Broome St, NY 10002,California, USA.
+                                        E-109 Block E Punjab Society, Lahore, Pakistan.
 
                                     </p>
                                 </div>
