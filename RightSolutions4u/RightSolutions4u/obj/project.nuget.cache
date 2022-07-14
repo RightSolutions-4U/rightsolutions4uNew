@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tCbbCnJObH4/vjauIYkK6wYkW3xSmAZrwCc3cVtHaX3cNff0kvd3qAdX1w4ivqrZ6dK8LWc7MRH8ia9ro1wFJA==",
+  "success": true,
+  "projectFilePath": "D:\\Work\\RightSolutions4u\\RightSolutions4u\\RightSolutions4u\\RightSolutions4u.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\infod\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
