@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Thanks";
+}
+@{
+}
+@*@{
+        Layout = "";
+    }*@
+<link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="~/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link href="~/css/font-awesome.css" rel="stylesheet">
+<!-- //for bootstrap working -->
+<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,300,300i,400,400i,500,500i,600,600i,700,800" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700" rel="stylesheet">
+<div class="top_header" id="home">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="nav_top_fx_w3ls_agileinfo">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="logo-w3layouts-agileits">
+                    <h1> <a class="navbar-brand" href="index.html"><i class="fa fa-clone" aria-hidden="true"></i> RightSolutions4u <span class="desc"></span></a></h1>
+                </div>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="nav_right_top">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="request" href="@Url.Action("Contact", "Menu")">Send Request</a></li>
+
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                        <li><a href="@Url.Action("About", "Menu")">About</a></li>
+                        <li><a href="@Url.Action("Portfolio", "Menu")">Portfolio</a></li>
+                        <li class="active"><a href="@Url.Action("Contact", "Menu")">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What we do <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="@Url.Action("Portfolio", "Menu")">Projects</a></li>
+                                <li><a href="404.html">Services</a></li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    @section Banner {
+
+    }
+</div>
+
+<div class="banner_inner_con">
+
+</div>
+
+<div class="banner_bottom">
+    <div class="container">
+        <h3 class="tittle-w3ls">Thank you for Contacting US. We'll revert back shortly.'</h3>
+    </div>
+</div>

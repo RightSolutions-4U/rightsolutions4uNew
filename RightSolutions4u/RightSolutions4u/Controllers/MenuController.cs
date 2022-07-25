@@ -16,5 +16,14 @@ namespace RightSolutions4u.Controllers
         {
             return View("Portfolio");
         }
+        public IActionResult Contact()
+        {
+            return View("Contact");
+        }
+        public IActionResult About()
+        {
+            return View("About");
+        }
+
     }
 }

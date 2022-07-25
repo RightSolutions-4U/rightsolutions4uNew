@@ -3,9 +3,9 @@
 *@
 @{
 }
-@{
+@*@{
     Layout = "";
-}
+}*@
 <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="~/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
@@ -26,24 +26,24 @@
                     <span class="icon-bar"></span>
                 </button>
                 <div class="logo-w3layouts-agileits">
-                    <h1> <a class="navbar-brand" href="index.html"><i class="fa fa-clone" aria-hidden="true"></i> Conceit <span class="desc">For your Business</span></a></h1>
+                    <h1> <a class="navbar-brand" href="index.html"><i class="fa fa-clone" aria-hidden="true"></i> RightSolutions4u <span class="desc"></span></a></h1>
                 </div>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <div class="nav_right_top">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="request" href="contact.html">Send Request</a></li>
+                        <li><a class="request" href="@Url.Action("Contact", "Menu")">Send Request</a></li>
 
                     </ul>
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li class="active"><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                        <li><a href="@Url.Action("About", "Menu")">About</a></li>
+                        <li class="active"><a href="@Url.Action("Portfolio", "Menu")">Portfolio</a></li>
+                        <li><a href="@Url.Action("Contact", "Menu")">Contact</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What we do <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="portfolio.html">Projects</a></li>
+                                <li><a href="@Url.Action("Portfolio", "Menu")">Projects</a></li>
                                 <li><a href="404.html">Services</a></li>
 
 
@@ -55,9 +55,13 @@
             <!--/.nav-collapse -->
         </div>
     </nav>
+    @section Banner {
+
+    }
 </div>
 
 <div class="banner_inner_con">
+    
 </div>
 
 <div class="banner_bottom">
@@ -65,7 +69,7 @@
         <h3 class="tittle-w3ls">Projects</h3>
         <div class="inner_sec_info_wthree_agile">
             <!--/projects-->
-            <ul class="portfolio-categ filter">
+@*            <ul class="portfolio-categ filter">
                 <li class="port-filter all active">
                     <a href="#">All</a>
                 </li>
@@ -81,7 +85,7 @@
                 <li class="cat-item-4">
                     <a href="#" title="Category 4">Category 4</a>
                 </li>
-            </ul>
+            </ul>*@
 
 
             <ul class="portfolio-area">
@@ -91,10 +95,10 @@
                         <span class="image-block block2 img-hover">
                             <a class="image-zoom" href="https://aviopro.net/" rel="prettyPhoto[gallery]">
 
-                                <img src="~/images/g1.jpg" class="img-responsive" alt="Conceit">
+                                <img src="~/images/avioproLogo.png" class="img-responsive" alt="RightSolutions4u" />
                                 <div class="port-info">
                                     <h5>View Project</h5>
-                                    <p>Add Some Description</p>
+                                    <p>General Trading</p>
                                 </div>
                             </a>
                         </span>
@@ -107,10 +111,10 @@
                         <span class="image-block block2">
                             <a class="image-zoom" href="http://zaxmon.com/" rel="prettyPhoto[gallery]">
 
-                                <img src="~/images/g2.jpg" class="img-responsive" alt="Conceit">
+                                <img src="~/images/zaxmonlogo.jpeg" class="img-responsive" alt="RightSolutions4u">
                                 <div class="port-info">
                                     <h5>View Project</h5>
-                                    <p>Zaxmon is providing chemical for Industrial/Aviation chemical in Gulf countries</p>
+                                    <p>Chemicals for Industries</p>
                                 </div>
                             </a>
                         </span>
@@ -123,7 +127,7 @@
                         <span class="image-block block2">
                             <a class="image-zoom" href="~/images/g3.jpg" rel="prettyPhoto[gallery]">
 
-                                <img src="~/images/g3.jpg" class="img-responsive" alt="Conceit">
+                                <img src="~/images/g3.jpg" class="img-responsive" alt="RightSolutions4u">
                                 <div class="port-info">
                                     <h5>View Project</h5>
                                     <p>Add Some Description</p>
@@ -139,7 +143,7 @@
                         <span class="image-block block2">
                             <a class="image-zoom" href="~/images/g4.jpg" rel="prettyPhoto[gallery]">
 
-                                <img src="~/images/g4.jpg" class="img-responsive" alt="Conceit">
+                                <img src="~/images/g4.jpg" class="img-responsive" alt="RightSolutions4u">
                                 <div class="port-info">
                                     <h5>View Project</h5>
                                     <p>Add Some Description</p>
@@ -155,7 +159,7 @@
                         <span class="image-block block2">
                             <a class="image-zoom" href="~/images/g5.jpg" rel="prettyPhoto[gallery]">
 
-                                <img src="~/images/g5.jpg" class="img-responsive" alt="Conceit">
+                                <img src="~/images/g5.jpg" class="img-responsive" alt="RightSolutions4u">
                                 <div class="port-info">
                                     <h5>View Project</h5>
                                     <p>Add Some Description</p>
@@ -171,7 +175,7 @@
                         <span class="image-block block2">
                             <a class="image-zoom" href="~/images/g6.jpg" rel="prettyPhoto[gallery]">
 
-                                <img src="~/images/g6.jpg" class="img-responsive" alt="Conceit">
+                                <img src="~/images/g6.jpg" class="img-responsive" alt="RightSolutions4u">
                                 <div class="port-info">
                                     <h5>View Project</h5>
                                     <p>Add Some Description</p>
@@ -180,56 +184,6 @@
                         </span>
                     </div>
                 </li>
-
-
-                <li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
-                    <div>
-                        <span class="image-block block2">
-                            <a class="image-zoom" href="~/images/g7.jpg" rel="prettyPhoto[gallery]">
-
-                                <img src="~/images/g7.jpg" class="img-responsive" alt="Conceit">
-                                <div class="port-info">
-                                    <h5>View Project</h5>
-                                    <p>Add Some Description</p>
-                                </div>
-                            </a>
-                        </span>
-                    </div>
-                </li>
-
-
-                <li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
-                    <div>
-                        <span class="image-block block2">
-                            <a class="image-zoom" href="~/images/g8.jpg" rel="prettyPhoto[gallery]">
-
-                                <img src="~/images/g8.jpg" class="img-responsive" alt="Conceit">
-                                <div class="port-info">
-                                    <h5>View Project</h5>
-                                    <p>Add Some Description</p>
-                                </div>
-
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
-                    <div>
-                        <span class="image-block block2">
-                            <a class="image-zoom" href="~/images/g1.jpg" rel="prettyPhoto[gallery]">
-
-                                <img src="~/images/g1.jpg" class="img-responsive" alt="Conceit">
-                                <div class="port-info">
-                                    <h5>View Project</h5>
-                                    <p>Add Some Description</p>
-                                </div>
-
-                            </a>
-                        </span>
-                    </div>
-                </li>
-
-
                 <div class="clearfix"></div>
             </ul>
             <!--end portfolio-area -->
